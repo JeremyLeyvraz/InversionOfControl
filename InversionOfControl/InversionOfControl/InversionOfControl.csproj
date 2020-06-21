@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>JérémyLeyvraz</Authors>
+    <PackageId>JLZ.InversionOfControl</PackageId>
+    <Version>1.0.0.2-alpha</Version>
+    <Product>JLZ.InversionOfControl</Product>
+    <Description>Inversion of control package (test version)</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.5" />
+  </ItemGroup>
+
+</Project>
