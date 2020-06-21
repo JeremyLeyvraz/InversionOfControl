@@ -3,7 +3,10 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace InversionOfControl.DependencyInjection
 {
-    public static class ServiceRegistration
+    /// <summary>
+    /// Registration service
+    /// </summary>
+    public static class RegistrationService
     {
         #region Fields
 

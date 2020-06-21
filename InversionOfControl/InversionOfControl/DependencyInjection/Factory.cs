@@ -2,16 +2,19 @@
 
 namespace InversionOfControl.DependencyInjection
 {
+    /// <summary>
+    /// Object factory
+    /// </summary>
     public static class Factory
     {
         #region Public methods
 
         /// <summary>
-        /// Construct an object of type
+        /// Construct an object
         /// </summary>
         /// <typeparam name="T">Type of the object to construct</typeparam>
         /// <returns>An instance of the object of type T</returns>
-        /// <remarks>All parameters of the constructor of type must be register in the service registry <see cref="DIServiceRegistration"/></remarks>
+        /// <remarks>All parameters of the constructor of type must be register in the service registry <see cref="RegistrationService"/></remarks>
         /// <remarks>The object T must have only one constructor</remarks>
         public static T Construct<T>()
         {
@@ -20,7 +23,7 @@ namespace InversionOfControl.DependencyInjection
             var paramList = new List<object>();
             foreach (var param in firstConstructor.GetParameters())
             {
-                var service = ServiceRegistration.Resolve(param);
+                var service = RegistrationService.Resolve(param);
                 paramList.Add(service);
             }
 
