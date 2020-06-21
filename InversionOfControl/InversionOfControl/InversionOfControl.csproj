@@ -3,10 +3,10 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>JérémyLeyvraz</Authors>
-    <PackageId>JLZ.InversionOfControl</PackageId>
-    <Version>1.0.0.2-alpha</Version>
-    <Product>JLZ.InversionOfControl</Product>
-    <Description>Inversion of control package (test version)</Description>
+    <PackageId>InversionOfControl_LJ</PackageId>
+    <Version>1.2.1.1</Version>
+    <Product>InversionOfControl_LJ</Product>
+    <Description>Library used to manage the inversion of dependences in an application.</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
